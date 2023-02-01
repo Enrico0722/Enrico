@@ -1,0 +1,170 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+	background-image:url(/img/bg5.jpg.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+
+
+}
+
+nav{
+	overflow: hidden;
+	background: rgb(55, 3, 240, 0.651);
+	line-height: 30px;
+}
+
+nav a{
+	float: left;
+	display: block;
+	width: 100px;
+	text-align: center;
+	padding: 18px 20px;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 700;
+	color: white; 
+}
+
+nav a:hover{
+	background: aqua;
+	color: black;
+}
+
+nav .active{
+	background: none;
+}
+
+
+
+.Landpage h1{
+	color: white;
+	margin-top: 200px;
+	margin-left: 50px;
+	font-size: 50px;
+}
+
+.Landpage pre{
+	color:  white;
+	font-size: 25px;
+	margin-left: -90px;
+	margin-top: -20px;
+	font-family: Century;
+}
+
+
+
+.button1 {
+	font-family: "Century";
+	font-size: 18px;
+	font-weight: bold;
+	background: rgb(5, 128, 165);
+	width: 160px;
+	padding: 15px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	border-radius: 10px;
+	cursor: pointer;
+	margin-left: 60px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	-webkit-transition-propety: box-shadow, transform;
+	transition-property: box-shadow, transform;
+}
+
+.button1:hover{
+	box-shadow:  0 0 20px aqua;
+	-webkit-transform: scale(1.1);
+	transition: scale(1.1);
+}
+
+
+#css {
+  color: rgb(165, 165, 162);
+  font-family: 'Odibee Sans';
+}
+
+
+.carousel-wrapper {
+  height: 350px;
+  position: relative;
+  width: 500px;
+  display: block;
+  margin: 20px auto ;
+  border: 2px solid black;
+  float: right;
+  margin-top: -270px;
+  margin-right: 200px;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+
+[id^= "item"] {
+  display: none;
+}
+.item-1 {
+  z-index: 2;
+  opacity: 1;
+  background-image: url("/img/background5.png");
+  background-size: cover;
+}
+
+.cover{
+	width: 900px;
+	height: 400px;
+	margin-top: 450px;
+	margin-left: -10px;
+	align-items: center;
+	display: flex;
+}
+
+
+
+.bottomnav nav{
+	overflow: hidden;
+	background: grey;
+	line-height: 30px;
+	margin-top: 50px;
+
+}
+
+.bottomnav nav a{
+	float: right;
+	display: block;
+	width: 100px;
+	text-align: center;
+	padding: 18px 20px;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 700;
+	color: white; 
+}
+
+.bottomnav nav a:hover{
+	background: #ddd;
+	color: black;
+}
+
+.bottomnav nav .active{
+	background: none;
+}
+img{
+	width: 300px;
+	height: 250px;
+	margin-top: -25%;
+	margin-left: 600px;
+	border-top-left-radius: 50px;
+    border-style: groove;
+}
