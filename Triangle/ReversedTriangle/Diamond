@@ -1,0 +1,98 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyM/WJihVJr88mcV6b+7IJTK",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Enrico0722/Enrico/blob/main/Triangle/ReversedTriangle/Diamond\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "FsSji_j8QPLL",
+        "outputId": "8eac90d2-9ee6-423b-95c2-7e3a73a4e227"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Triangle\n",
+            "    *\n",
+            "   ***\n",
+            "  *****\n",
+            " *******\n",
+            "*********\n",
+            "\n",
+            "Reversed Triangle\n",
+            "*********\n",
+            " *******\n",
+            "  *****\n",
+            "   ***\n",
+            "    *\n",
+            "\n",
+            "Diamond\n",
+            "    *\n",
+            "   ***\n",
+            "  *****\n",
+            " *******\n",
+            "*********\n",
+            "*********\n",
+            " *******\n",
+            "  *****\n",
+            "   ***\n",
+            "    *\n"
+          ]
+        }
+      ],
+      "source": [
+        "rows = 5\n",
+        "\n",
+        "def print_triangle(n):\n",
+        "    for i in range(1, n + 1):\n",
+        "        print(' ' * (n - i) + '*' * (2 * i - 1))\n",
+        "\n",
+        "def print_reversed_triangle(n):\n",
+        "    for i in range(n, 0, -1):\n",
+        "        print(' ' * (n - i) + '*' * (2 * i - 1))\n",
+        "\n",
+        "def print_diamond(n):\n",
+        "    print_triangle(n)\n",
+        "    print_reversed_triangle(n)\n",
+        "\n",
+        "print(\"Triangle\")\n",
+        "print_triangle(rows)\n",
+        "\n",
+        "print(\"\\nReversed Triangle\")\n",
+        "print_reversed_triangle(rows)\n",
+        "\n",
+        "print(\"\\nDiamond\")\n",
+        "print_diamond(rows)\n"
+      ]
+    }
+  ]
+}
